@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelZone | Noticias y guías de videojuegos</title>
+
+  <!-- Metadatos para buscadores -->
+  <meta name="description" content="PixelZone: noticias, reseñas y recomendaciones de videojuegos para todas las plataformas.">
+  <meta name="keywords" content="videojuegos, gaming, noticias, reseñas, consolas, PC, Nintendo, PlayStation, Xbox">
+  <meta name="author" content="Alejandro">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7c3aed">
+
+  <!-- Open Graph (redes sociales) -->
+  <meta property="og:title" content="PixelZone | Noticias y guías de videojuegos">
+  <meta property="og:description" content="Noticias, reseñas y recomendaciones de videojuegos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo.svg">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Icono de la página -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap y Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo.svg" alt="Logo de PixelZone" width="40" height="40">
+        <span class="logo-text">PixelZone</span>
+        <span class="badge text-bg-warning">BETA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="noticias.html"><i class="bi bi-newspaper"></i> Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="enlaces.html"><i class="bi bi-link-45deg"></i> Enlaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="btnTema" class="btn btn-outline-secondary btn-sm" type="button" aria-label="Cambiar modo oscuro">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección principal -->
+  <header class="hero text-center">
+    <div class="container py-5">
+      <h1 class="logo-text display-5 mb-3">PixelZone</h1>
+      <p class="lema">Juega. Explora. Comparte.</p>
+      <p class="lead mb-4">Tu punto de encuentro para noticias, reseñas y recomendaciones de videojuegos.</p>
+      <button id="btnBienvenida" class="btn btn-gamer btn-lg"><i class="bi bi-controller"></i> ¡Empezar!</button>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- Carrusel -->
+    <section class="mb-5">
+      <h2 class="titulo-seccion">Juegos destacados</h2>
+      <div id="carruselJuegos" class="carousel slide rounded-4 overflow-hidden shadow" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselJuegos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Juego 1"></button>
+          <button type="button" data-bs-target="#carruselJuegos" data-bs-slide-to="1" aria-label="Juego 2"></button>
+          <button type="button" data-bs-target="#carruselJuegos" data-bs-slide-to="2" aria-label="Juego 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.svg" class="d-block w-100 img-fluid" alt="Aventura en un mundo abierto">
+            <div class="carousel-caption">
+              <h3>Mundo abierto</h3>
+              <p>Explora mapas gigantes llenos de secretos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.svg" class="d-block w-100 img-fluid" alt="Carreras a toda velocidad">
+            <div class="carousel-caption">
+              <h3>Carreras</h3>
+              <p>Velocidad, adrenalina y los mejores circuitos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide3.svg" class="d-block w-100 img-fluid" alt="Juegos retro de 8 bits">
+            <div class="carousel-caption">
+              <h3>Retro</h3>
+              <p>Los clásicos que marcaron una generación.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselJuegos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselJuegos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Listas -->
+    <section class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="card h-100 tarjeta">
+          <div class="card-body">
+            <h2 class="h4"><i class="bi bi-trophy text-warning"></i> Top 5 del mes</h2>
+            <p>Los juegos más jugados por nuestra comunidad:</p>
+            <ol class="lista-top">
+              <li>The Legend of Zelda: Tears of the Kingdom</li>
+              <li>Elden Ring</li>
+              <li>Minecraft</li>
+              <li>Hollow Knight</li>
+              <li>Forza Horizon 5</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 tarjeta">
+          <div class="card-body">
+            <h2 class="h4"><i class="bi bi-joystick text-info"></i> Plataformas</h2>
+            <p>Hablamos de juegos en todas estas plataformas:</p>
+            <ul class="lista-plataformas">
+              <li><i class="bi bi-pc-display"></i> PC</li>
+              <li><i class="bi bi-playstation"></i> PlayStation</li>
+              <li><i class="bi bi-xbox"></i> Xbox</li>
+              <li><i class="bi bi-nintendo-switch"></i> Nintendo Switch</li>
+              <li><i class="bi bi-phone"></i> Móvil</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre el sitio -->
+    <section class="mb-5">
+      <h2 class="titulo-seccion">¿Qué es PixelZone?</h2>
+      <p>PixelZone es un sitio creado por un estudiante apasionado por los videojuegos. Aquí encontrarás noticias, artículos y enlaces de interés sobre el mundo gamer.</p>
+      <p>Esta es una <strong>versión beta</strong>: algunas secciones todavía están en construcción y se irán completando en las próximas versiones.</p>
+      <button id="btnEstado" class="btn btn-outline-primary"><i class="bi bi-info-circle"></i> Ver estado de la beta</button>
+    </section>
+
+  </main>
+
+  <!-- Pie de página y modal de privacidad (los genera js/main.js) -->
+  <div id="pie"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

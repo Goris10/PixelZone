@@ -1,0 +1,185 @@
+/* ===== PixelZone - estilos personalizados ===== */
+
+:root {
+  --pz-morado: #7c3aed;
+  --pz-cian: #06b6d4;
+  --pz-rosa: #ec4899;
+  --pz-fondo: #f8f7ff;
+  --pz-texto: #1e1b2e;
+  --pz-tarjeta: #ffffff;
+}
+
+/* Variables para el modo oscuro */
+[data-bs-theme="dark"] {
+  --pz-fondo: #0f0c1d;
+  --pz-texto: #ece9ff;
+  --pz-tarjeta: #1b1730;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--pz-fondo);
+  color: var(--pz-texto);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Logo y lema */
+.logo-text {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  color: var(--pz-morado);
+}
+
+h1.logo-text {
+  font-size: clamp(1.6rem, 6vw, 3rem);
+  color: #fff;
+  text-shadow: 4px 4px 0 var(--pz-rosa);
+}
+
+.lema {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  color: #fde68a;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: var(--pz-tarjeta);
+}
+
+.navbar .nav-link {
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: var(--pz-morado);
+  color: #fff !important;
+}
+
+/* Sección principal (hero) */
+.hero {
+  background: linear-gradient(135deg, var(--pz-morado), var(--pz-cian));
+  color: #fff;
+}
+
+.btn-gamer {
+  background-color: var(--pz-rosa);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Efecto hover: cambia el fondo y el tamaño */
+.btn-gamer:hover {
+  background-color: #fde68a;
+  color: var(--pz-texto);
+  transform: scale(1.05);
+}
+
+/* Títulos de sección */
+.titulo-seccion {
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.titulo-seccion::before {
+  content: "▶ ";
+  color: var(--pz-rosa);
+}
+
+/* Carrusel */
+.carousel-caption {
+  background-color: rgba(15, 12, 29, 0.6);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+/* Tarjetas con efecto hover */
+.tarjeta {
+  background-color: var(--pz-tarjeta);
+  border: 2px solid transparent;
+  border-radius: 16px;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover {
+  border-color: var(--pz-morado);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+
+.tarjeta img {
+  border-radius: 14px 14px 0 0;
+}
+
+/* Listas */
+.lista-top li,
+.lista-plataformas li {
+  padding: 0.25rem 0;
+  transition: color 0.2s;
+}
+
+.lista-top li:hover,
+.lista-plataformas li:hover {
+  color: var(--pz-rosa);
+}
+
+.lista-plataformas {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-plataformas i {
+  color: var(--pz-cian);
+  margin-right: 0.5rem;
+}
+
+/* iFrames responsivos */
+.marco {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Contacto */
+.btn-correo {
+  background-color: var(--pz-morado);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-correo:hover {
+  background-color: var(--pz-rosa);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--pz-tarjeta);
+}
+
+.redes a {
+  font-size: 1.5rem;
+  color: var(--pz-texto);
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.redes a:hover {
+  color: var(--pz-rosa);
+}
+
+/* Etiqueta "en construcción" para secciones de la beta */
+.en-construccion {
+  border: 2px dashed var(--pz-cian);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  opacity: 0.85;
+}

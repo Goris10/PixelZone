@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias | PixelZone</title>
+  <meta name="description" content="Últimas noticias y artículos sobre videojuegos en PixelZone.">
+  <meta name="keywords" content="noticias videojuegos, lanzamientos, artículos gaming">
+  <meta name="author" content="Alejandro">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7c3aed">
+  <meta property="og:title" content="Noticias | PixelZone">
+  <meta property="og:description" content="Últimas noticias y artículos sobre videojuegos.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="img/logo.svg" alt="Logo de PixelZone" width="40" height="40">
+        <span class="logo-text">PixelZone</span>
+        <span class="badge text-bg-warning">BETA</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="noticias.html"><i class="bi bi-newspaper"></i> Noticias</a></li>
+          <li class="nav-item"><a class="nav-link" href="enlaces.html"><i class="bi bi-link-45deg"></i> Enlaces</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="btnTema" class="btn btn-outline-secondary btn-sm" type="button" aria-label="Cambiar modo oscuro">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h1 class="titulo-seccion">Noticias y artículos</h1>
+    <p class="mb-4">Lo último del mundo de los videojuegos.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 tarjeta">
+          <img src="img/slide1.svg" class="card-img-top img-fluid" alt="Montañas de un mundo abierto">
+          <div class="card-body">
+            <span class="badge text-bg-primary mb-2">Tendencias</span>
+            <h2 class="card-title h5">El auge de los mundos abiertos</h2>
+            <p class="card-text">Cada vez más estudios apuestan por mapas enormes donde el jugador decide su camino.</p>
+            <button class="btn btn-gamer btn-sm btn-leer" data-texto="Los juegos de mundo abierto permiten explorar libremente, completar misiones en el orden que quieras y descubrir secretos. Títulos como Zelda o Elden Ring demostraron que la libertad del jugador es una de las cosas más valoradas hoy en día.">Leer más</button>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 tarjeta">
+          <img src="img/slide2.svg" class="card-img-top img-fluid" alt="Pista de carreras nocturna">
+          <div class="card-body">
+            <span class="badge text-bg-info mb-2">Carreras</span>
+            <h2 class="card-title h5">Simuladores vs. arcade</h2>
+            <p class="card-text">¿Prefieres el realismo de un simulador o la diversión de un juego arcade?</p>
+            <button class="btn btn-gamer btn-sm btn-leer" data-texto="Los simuladores buscan reproducir la física real de un auto, mientras que los juegos arcade priorizan la velocidad y la diversión. Ambos estilos tienen comunidades enormes y cada uno ofrece una experiencia muy distinta.">Leer más</button>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 tarjeta">
+          <img src="img/slide3.svg" class="card-img-top img-fluid" alt="Personaje retro pixelado">
+          <div class="card-body">
+            <span class="badge text-bg-success mb-2">Retro</span>
+            <h2 class="card-title h5">Por qué volvemos a los clásicos</h2>
+            <p class="card-text">Los juegos de 8 y 16 bits siguen conquistando a nuevas generaciones.</p>
+            <button class="btn btn-gamer btn-sm btn-leer" data-texto="La nostalgia, la jugabilidad sencilla y el arte pixelado hacen que los juegos retro sigan vigentes. Muchos juegos independientes modernos se inspiran en ese estilo.">Leer más</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="en-construccion mt-5">
+      <i class="bi bi-cone-striped fs-2"></i>
+      <p class="mb-0">Versión beta: pronto habrá más artículos y un buscador de noticias.</p>
+    </div>
+  </main>
+
+  <!-- Modal para leer la noticia completa -->
+  <div class="modal fade" id="modalNoticia" tabindex="-1" aria-labelledby="modalNoticiaTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalNoticiaTitulo"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalNoticiaTexto"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pie"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
